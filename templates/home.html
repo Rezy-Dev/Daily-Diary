@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="premium text-center">
+    <h1>Welcome to Daily Diary</h1>
+    <p class="mt-3">Capture your thoughts, record your memories, and revisit them anytime.</p>
+    <div class="mt-4">
+        <a href="{{ url_for('diary') }}" class="btn btn-primary">Write a New Entry</a>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+    </div>
+</div>
+{% endblock %}

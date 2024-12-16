@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="premium">
+    <h1 class="text-center">Write a New Diary Entry</h1>
+    <form method="POST" class="mt-4">
+        <div class="mb-3">
+            <label for="diaryEntry" class="form-label">Your Thoughts</label>
+            <textarea id="diaryEntry" name="diary_entry" class="form-control" rows="5" placeholder="Write your diary entry here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate PDF</button>
+    </form>
+</div>
+{% endblock %}
