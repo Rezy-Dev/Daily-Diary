@@ -81,4 +81,4 @@ Since you are exploring this app for educational purposes, it’s important to u
 
 License? What is this, a driver's license? A drinking license? Do we even need one here???
 
-Well, technically, yes. There is a [MIT License](https://github.com/Rezy-Dev/Vulnerable-WebApp/blob/main/LICENSE) (but don’t worry, it’s not as complicated as it sounds).
+Well, technically, yes. There is a [MIT License](https://github.com/Rezy-Dev/Daily-Diary/blob/main/LICENSE) (but don’t worry, it’s not as complicated as it sounds).
